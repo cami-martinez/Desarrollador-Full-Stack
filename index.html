@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- ESTILOS CSS -->
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <!-- CABECERA -->
+    <header id="header">
+        <img src="" alt="Imagen perfil 3/4 Camila Martinez">
+        <h1>Camila Martinez</h1>
+        <p>Developer Full Stack</p>
+    </header>
+    <!-- NAVEGACION PRINCIPAL -->
+    <nav>
+        <a href="">CM</a>
+        <button class="btn"></button>
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <!-- inicio -->
+        <section id="home">
+
+        </section>
+        <!-- seccion de trabajos -->
+        <section id="portfolio">
+
+        </section>
+        <!-- seccion de proyectos -->
+        <section id="projects">
+
+        </section>
+    </main>
+    <!-- PIE DE PAGINA -->
+    <footer id="footer">
+        <!-- mapa de contacto -->
+        <div class="map">
+
+        </div>
+        <!-- formulario de contacto -->
+        <form action="" id="contact">
+            <h2>Deja tu consulta</h2>
+            <!-- campo nombre -->
+            <label for="contact_name">Ingrese su Nombre</label>
+            <input 
+                id="contact_name"
+                name="name"
+                type="text"
+                maxlength="50"
+                pattern="[A-Z a-z]{3,50}"
+                required>
+            <div class="validation">
+                utilice entre 3 y 50 caracteres, que sean solamente letras.
+            </div>
+            <!-- campo correo -->
+            <label for="contact_email">Ingrese su Correo</label>
+            <input 
+                id="contact_email"
+                name="email"
+                type="email"
+                minlength="8"
+                required>
+            <div class="validation">
+                coloque una direccion de al menos 8 caracteres, respetando el formato "usuario@servidor"
+            </div>
+            <!-- campo telefono -->
+            <label for="contact_phone">Ingrese su Telefono</label>
+            <input 
+                id="contact_phone"
+                name="phone"
+                type="tel"
+                pattern="[0-9]{6,20}"
+                required>
+            <div class="validation">
+                coloque su numero telefonico sin espacios ni simbolos, utilizando solamente numeros
+            </div>
+            <!-- campo consulta -->
+            <label for="contact_consult">Ingrese su consulta</label>
+            <textarea 
+            name="consult" 
+            id="contact_consult"
+            minlength="30"
+            maxlength="1500"
+            required></textarea>
+            <button class="btn">Enviar</button>
+        </form>
+        <!-- redes sociales -->
+        <div class="social">
+            <a class="linkedin"
+                href="https://linkedin.com/in/cami-martinez-b84539222" 
+                target="_black" 
+                title="Seguime en Linkedin">
+            </a>
+            <a class="github"
+                href="https://github.com/cami-martinez" 
+                target="_black" 
+                title="Visita mi repo en GitHub">
+            </a>
+            <a class="instagram"
+                href="https://www.instagram.com/sinagstore.fm/" 
+                target="_black" 
+                title="Te dejo mi instagram">
+            </a>
+            <a class="whatsapp"
+                href="https://api.whatsapp.com/send?phone=54110303456&text=Buenas,%20mi%20consulta%20es" 
+                target="_black" 
+                title="Mensajeame por whatsapp">
+            </a>
+        </div>
+        <!-- derechos de autor -->
+        <p class="copy">
+            &copy;2023Todos los derechos reservados | para mas informacion consultar a <a href="mailto: usuario@miemail.com">usuario@miemail.com</a>
+        </p>
+    </footer>
+    <!-- LOGICA JS -->
+    <script src="scripts/index.js"></script>
+</body>
+</html>
