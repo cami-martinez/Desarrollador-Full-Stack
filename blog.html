@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- Estilo CSS -->
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <!-- Navegacion -->
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="gallery.html">Galeria</a></li>
+            <li><a href="#" class="active">Blog</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+    <!-- Cabecera de Pagina -->
+<header id="header" class="header">
+    <h1>Fundamentos Web</h1>
+    <p>HTML Y CSS</p>
+</header>
+    <!-- Contenido Principal -->
+    <main>
+        <!-- Articulo: Contenido Independiente -->
+        <article>
+            <header class="header">
+                <h2>Formularios HTML</h2>
+            </header>
+            <p>
+                Son herramientas que permiten el <em>intercambio de datos entre cliente y servidor</em>, para utilizarlos dentro de la pagina, simplemente debemos colocar la etiqueta <strong>&lt;form></strong> y dentro de la misma los elementos que seran procesados para el envio de los datos.
+            </p>
+            <!-- Seccion: Contenido Contextualizado -->
+            <section>
+                <header>
+                    <h3>¿Comó funcionan?</h3>
+                </header>
+                <p>
+                    <em>A la etiqueta mencionada anteriormente</em> debemos especificarle por lo menos 2 atributos, que son <strong>action="..."</strong> el cual indica que debe suceder al enviar el formulario; y <strong>method="..."</strong> que indica como se debe realizar el intercambio de los datos. 
+                </p>
+                <ul class="example">
+                    <li>
+                        <strong>GET:</strong> metodo cuya prioridad radica en la respuesta del servidor, ya que los datos se envian en texto plano y permanecen visibles en la barra de direcciones. <em>Se utiliza principalmente en Buscadores</em>
+                    </li>
+                    <li>
+                        <strong>POST:</strong> metodo cuya prioridad esta en proteger los datos enviados por el usuario, ya que cifra los mismos antes de realizar el envio. Se utiliza en formularios de <em>registro, acceso, contacto, etc...</em>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <header>
+                    <h3>¿Comó estan compuestos?</h3>
+                </header>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At vitae a est non nemo tempora consequuntur atque sit officia itaque eaque alias minus hic, repellat ipsam necessitatibus sapiente minima libero quisquam. At voluptatum iste delectus, dignissimos fuga expedita odio? Molestiae?
+                </p>
+                <ul class="example">
+                    <li>
+                        <strong>name="..."</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto excepturi voluptatibus, eligendi inventore aut vero culpa saepe iste. Adipisci, doloremque.
+                    </li>
+                    <li>
+                        <strong>type="..."</strong> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam quibusdam nisi incidunt laborum. Vero dicta veritatis fugiat! Inventore, error quos?
+                    </li>
+                    <li>
+                        <strong>value="..."</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est repellat necessitatibus saepe aliquam itaque molestias numquam porro. Laboriosam, illo cum.
+                    </li>
+                </ul>
+            </section>
+        </article>
+        <article>
+            <header class="header">
+                <h2>Tablas HTML</h2>
+            </header>
+            <p>
+                Son herramientas que permiten organizar la informacion de manera tabular, para incorporarlas dentro de la pagina simplementes debemos utilizar la etiqueta <strong>&lt;table></strong> dentro de la misma, crear su estructura respetando el <em>modelo de cajas.</em>
+            </p>
+            <section>
+                <header>
+                    <h3>¿Poseen estructura semantica?</h3>
+                </header>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quis repellat, quos fugit earum sunt numquam unde voluptas doloribus quidem eum tempora provident ea illum adipisci rerum modi cupiditate iusto facilis consequuntur recusandae odio quod. Omnis quo consectetur non enim!
+                </p>
+                <ul class="example">
+                    <li>
+                        <strong>THEAD:</strong> Fila de encabezado que posee en su interior las etiquetas correspondientes identificadas como <em>&lt;th></em>
+                    </li>
+                    <li>
+                        <strong>TBODY:</strong> Cuerpo de tabla que posee las filas con los datos relevantes para el usuario, tambien puede contener celdas de encabezado. 
+                    </li>
+                    <li>
+                        <strong>TFOOT:</strong> Pie de tabla que posee datos complementarios al cuerpo, como promedios, totales, maximos, minimos, etc.
+                    </li>
+                </ul>
+                <div class="example container">
+                    <table class="classic">
+                        <caption>Usuarios</caption>
+                            <!-- CABECERA -->
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Correo</th>
+                            </tr>
+                        </thead>
+                            <!-- CUERPO -->
+                        <tbody>
+                            <tr>
+                                <td>Camila</td>
+                                <td>martinezc.2d@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>Fatima</td>
+                                <td>fatimaromina@gmail.com</td>
+                            </tr>
+                        </tbody>
+                            <!-- PIE -->
+                        <tfoot>
+                            <tr>
+                                <th>Total</th>
+                                <td>2</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <table class="modern">
+                        <caption>Rutina semanal</caption>
+                        <!-- CABECERA -->
+                        <thead>
+                            <tr>
+                                <th>TURNO</th>
+                                <th>Lu</th>
+                                <th>Ma</th>
+                                <th>Mie</th>
+                                <th>Ju</th>
+                                <th>Vi</th>
+                                <th>Sa</th>
+                            </tr>
+                        </thead>
+                        <!-- CUERPO -->
+                        <tbody>
+                            <tr>
+                                <th>Ma</th>
+                                <td>x</td>
+                                <td>x</td>
+                                <td>x</td>
+                                <td>x</td>
+                                <td></td>
+                                <td>x</td>
+                            </tr>
+                            <tr>
+                                <th>Ta</th>
+                                <td>x</td>
+                                <td></td>
+                                <td>x</td>
+                                <td></td>
+                                <td>x</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>No</th>
+                                <td>x</td>
+                                <td>x</td>
+                                <td></td>
+                                <td>x</td>
+                                <td>x</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                        <!-- PIE -->
+                            <tfoot>
+                                <tr>
+                                    <th>Total</th>
+                                    <td>3</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                </tr>
+                            </tfoot>
+                    </table>
+                </div>
+            </section>
+            <section>
+                <header>
+                    <h3>¿Celdas combinadas?</h3>
+                </header>
+                <p>
+                    Aveces necesitaremos que una celda ocupe mas de una fila o una columna, para ello debemos utilizar los atributos <strong>rowspan y colspan</strong> respectivamente. Tambien debemos considerar que todo contenido posterior a dicha celda sera desplazado hacia la derecha.
+                </p>
+                <div class="example container">
+                    <table class="semantic modern">
+                        <caption>Venta de Productos</caption>
+                        <thead>
+                            <tr>
+                                <th>Artiuclos</th>
+                                <th>Cantidad</th>
+                                <th>Precio</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monitor</td>
+                                <td>3</td>
+                                <td>51600</td>
+                                <td>154800</td>
+                            </tr>
+                            <tr>
+                                <td>Gabinete</td>
+                                <td>1</td>
+                                <td>21800</td>
+                                <td>21800</td>
+                            </tr>
+                            <tr>
+                                <td>Gamepad</td>
+                                <td>2</td>
+                                <td>10400</td>
+                                <td>20800</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th colspan="3">Total</th>
+                                <td>197400</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <table class="modern">
+                        <caption>Desarrolladores</caption>
+                        <thead>
+                            <tr>
+                                <th>Tipo</th>
+                                <th>Lenguaje</th>
+                            </tr>
+                        </thead>
+                        <tbody> 
+                            <tr>
+                                <td rowspan="3">FrontEnd</td>
+                                <td>HTML</td>
+                            </tr>
+                            <tr>
+                                <td>CSS</td>
+                            </tr>
+                            <tr>
+                                <td>JS</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3">BackEnd</td>
+                                <td>SQL</td>
+                            </tr>
+                            <tr>
+                                <td>PHP</td>
+                            </tr>
+                            <tr>
+                                <td>JAVA</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="classic">
+                        <tr>
+                            <td colspan="4">1-1</td>
+                        </tr>
+                        <tr>
+                            <td>2-1</td>
+                            <td colspan="2" rowspan="2">2-2</td>
+                            <td>2-3</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">3-1</td>
+                            <td rowspan="2">3-2</td>
+                        </tr>
+                        <tr>
+                            <td>4-1</td>
+                            <td rowspan="2">4-2</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">5-1</td>
+                            <td>5-1</td>
+                        </tr>
+                        <tr>
+                            <td>6-1</td>
+                            <td colspan="2">6-2</td>
+                            <td rowspan="2">6-3</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">7-1</td>
+                            <td>7-2</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </article>
+        <article>
+            <header class="header">
+                <h2>Contenido Multimedia</h2>
+            </header>
+            <p>
+                Se conoce con este nombre a todo elemento audiovisiual que podemos incorporar en nuestra pagina. Antiguamente era necesario instalar algun complemento o plugin de terceros como el famoso <em>flash player</em> pero en la actualidad los navegadores brindan soporte de manera nativa a este tipo de elementos. Tambien podemos corroborar la compatibilidad de nuestro navegador con dichos elementos desde el sitio <a href="https://caniuse.com" target="_blank">Can I Use</a>
+            </p>
+            <section>
+                <header>
+                    <h3>¿Contenido Embebido?</h3>
+                </header>
+                <p>
+                    El termino <strong>embed</strong> hace referencia a un tipo de contenido que fue compartido con autorizacion del autor original. Normalmente cuando insertamos este tipo de elementos en nuestras paginas, utilizamos la etiqueta <strong>&lt;iframe></strong> que permite la carga asincrona de contenido. 
+                </p>
+                <div class="example container">
+                    <figure>
+                        <!-- Colocar iframe aqui -->
+                        <iframe 
+                        src="https://www.youtube.com/embed/QU9c0053UAU" 
+                        title="정국 (Jung Kook) &#39;Seven (feat. Latto)&#39; Official MV" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                        <figcaption>Video con Copyright</figcaption>
+                    </figure>
+                    <figure>
+                    <iframe
+                    src="https://www.youtube.com/embed/84W7xbZX-70" 
+                    title="Jung Kook - Seven (feat. Latto)(Sub. Español/lyrics)[performs in NYC]" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                    </iframe>
+                    <figcaption>Dominio Publico</figcaption>
+                    </figure>
+                </div>
+            </section>
+            <section>
+                <header>
+                <h3>¿Multimedia sin plugins?</h3>
+                </header>
+                <p>
+                    <em>Como se meciona anteriormente</em> los navegadores actuales cuentan con una <strong>API de reproduccion</strong> a la que podemos acceder si utilizamos las etiquetas <strong>&lt;audio> y &lt;video></strong> que son complatibles con los formatos <em>.mp3, .wav .ogg y .mp4, .webm, .ogv</em> respectivamente. Estos elementos admiten elementos como <em>autoplay, muted, loop, controls, etc...</em>
+                </p>
+                <div class="container example">
+                    <figure>
+                        <video src="assets/media/Seven-jk.mp4" controls>
+                            <p>
+                                Lo sentimos, pero tu navegador NO es compatible con este elemento. Podes descargar el contenido desde el siguiente <a href="assets/media/Seven-jk.mp4">link</a>
+                            </p>
+                        </video>
+                        <figcaption>Seven JK Lyrics</figcaption>
+                    </figure>
+                </div>
+            </section>
+        </article>
+    </main>
+    <!-- Pie de pagina --> 
+    <footer id="footer">
+        <!-- Formulario de contacto -->
+        <form id="contact" action="scripts/contact.php" method="POST">
+            <label for="contact_name">Ingrese su nombre</label>
+            <input 
+                id="contact_name" 
+                name="name"
+                type="text"
+                minlength="3"
+                maxlength="50"
+                placeholder="Nombre: Camila Martinez"
+                required>
+            <label for="contact_email">Ingrese su Correo</label>
+            <input 
+                id="contact_email"
+                name="email"
+                type="email"
+                minlength="8"
+                placeholder="Correo: Martinezc.2d@gmail.com"
+                required>
+            <!-- Campo de Asunto -->
+            <label for="contact_subject">Seleccione el Asunto</label>
+            <select name="subject" id="contact_subject">
+                <option value="HTML">Estructura con HTML</option>
+                <option value="CSS">Diseño Grafico con CSS</option>
+                <option value="JS">Logica con JavaScript</option>
+            </select>
+            <!-- Campo de consulta -->
+            <label for="contact_consult">Ingrese 
+            su consulta</label>
+            <textarea 
+            name="consult" 
+            id="contact_consult"
+            minlength="30"
+            maxlength="3000"
+            placeholder="Consulta: Buenas mi consulta es..."
+            required></textarea>
+        <!-- Boton Enviar -->
+            <input class="btn" type="submit" value="ENVIAR">
+        </form>
+        <!-- Redes Sociales -->
+        <div class="social">
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+        </div>
+        <!-- Mapa de contacto -->
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.4274286432515!2d-65.41678488978697!3d-24.78081337788944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3cbcd829783%3A0xd70f2ad0f3cd0a97!2sThermomix%20Salta!5e0!3m2!1ses-419!2sar!4v1693419832208!5m2!1ses-419!2sar"
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <!-- Derechos de autor -->
+        <p>&copy;2023 Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
