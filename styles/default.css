@@ -6,7 +6,8 @@
 /* Navegacion */
 @import url('navigation.css');
 /* Contenido */
-
+@import url('container.css');
+@import url('box-model.css');
 /* Pie de pagina */
 @import url('contact-form.css');
 @import url('social-media.css');

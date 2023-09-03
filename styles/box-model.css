@@ -1,0 +1,24 @@
+.flex{
+    display: flex;
+}
+
+.grid{
+    display: grid;
+}
+
+/* TAMAÑO DE CONTENIDO */
+.small{
+    --size: 240px;
+}
+.medium{
+    --size: 360px;
+}
+.large{
+    --size: 480px;
+}
+/* IMPLREMENTACION DE VARIABLES */
+.flex >*{
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: min(100%, var(--size));
+}

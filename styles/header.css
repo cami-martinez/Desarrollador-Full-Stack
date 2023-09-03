@@ -4,6 +4,7 @@
     /* atributo css grid */
     display: grid;
     justify-content: center;
+    justify-items: center;
     align-content: center;
     /* tipografia */
     font-size: min(calc(2vw + 8rem), 3rem);
@@ -28,8 +29,8 @@
         50% 200%,
         center;
     background-size:
-        clamp(3rem, 35%, 600px),
-        clamp(3rem, 35%, 600px),
+        clamp(3rem, 25%, 600px),
+        clamp(3rem, 25%, 600px),
         clamp(3rem, 35%, 600px),
         cover; /*(min, tamaño, maximo)*/
     background-repeat: no-repeat;
@@ -42,5 +43,5 @@
     background-position: 
     top right,
     top left,
-    bottom center;
+    center;
 }
