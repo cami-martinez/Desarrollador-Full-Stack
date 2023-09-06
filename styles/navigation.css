@@ -1,39 +1,88 @@
-/* Small Devices (mobile) */
+/* Small Devices (Mobile) */
 nav{
-    /* Atributos de flexbox */
+    position: sticky;
+    /* POSICION PEGAJOSA:
+        El elemento ocupa lugar dentro del FLOW, pero deja de formar parte del mismo cuando se cumple determinada condicion. A diferencia del resto, el elemento no se desplaza, sino que establece dicha condicion con sus atributos (top, left, right, bottom)
+    */
+    top: 0;
+    bottom: 0;
+    z-index: 1; /*  */
+    /* Atributos de Flexbox */
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    /* Atributos de fondo */
-    background: var(--mar4)
+    /* Atributos de Fondo */
+    background: var(--mar1)
         linear-gradient(
-            to left,
-            var(--mar5),
-            var(--mar1)
+            to right,
+            var(--mar1),
+            var(--mar5)
         );
-    /* bg: color imagen position/size repeat */
+    /* BACKGROUND: color image position/size repeat */
     padding: 1rem;
 }
+nav .btn{
+    z-index: 1;
+    /* EXPLICACION:
+        correponde al indice de superposicion por capas, el nivel en donde se va a dibujar el elemento y como se va a ubicar en caso de superposicion, por defecto el valor es 0.
+     */
+}
 nav a{
-    color: var(--light);
-    text-decoration: none;
-    text-shadow: 0 0 .25rem var(--dark);
+    position: relative;
+    color: #eee;
+    text-shadow: 0 0 .25rem #333;
+}
+.menu a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -.5rem;
+    border-radius: .25rem;
+    width: .2rem;
+    height: .2rem;
+    background: linear-gradient(
+        to right,
+        transparent,
+        var(--light)
+    );
+    opacity: 0;
+    transition: all .25s linear;
+}
+.menu a.active::after,
+.menu a:hover::after{
+    width: 100%;
+    opacity: .9;
+}
+.menu li:hover{
+    animation: beat 1s ease-out alternate infinite;
 }
 .menu{
-    /* Atributos de tamaño */
+    position: fixed;
+    /* POSICION FIJA:
+        El elemento deja de formar parte del FLOW, pero a diferencia de Absolute, utiliza como referente al VIEWPORT. Cabe destacar que si no especifica la posicion, este permanecera fuera de la ventana.
+    */
+    top: 0;
+    left: -100%;
     width: 100%;
-    max-height: 0;
-    overflow: hidden;
+    height: 100%;
+    background-image: linear-gradient(
+        var(--mar2),
+        var(--mar3)
+    );
+    /* Disposicion de elementos */
+    display: grid;
+    justify-content: center;
+    align-content: space-evenly;
+    font-size: 1.25rem;
     /* transicion */
-    transition: all .5s ease-in;
+    transition: all .5s ease-out;
 }
-.menu.active,
-nav:hover .menu{
-    max-height: 100vh;
+.menu.active{
+    left: 0;
 }
-/* Medio Devices (tablet) */
-@media screen and (min-width:768px){
+/* Medium Devices (Tablet) */
+@media screen and (min-width: 768px){
     nav{
         flex-direction: row-reverse;
     }
@@ -41,21 +90,27 @@ nav:hover .menu{
         display: none;
     }
     .menu{
+        position: static;
+        background-image: none;
+        /* POSICION ESTATICA 
+            El elemento ocupa un lugar predeterminado dentro del FLOW y su posicion es inalterable. Es el valor utilizado por defecto.
+        */
         display: flex;
         gap: .5rem;
         width: auto;
-        max-height: 100vh; /* vh (viewport height)*/
+        max-height: 100vh; /*vh (viewport height) = altura de la ventana*/
     }
 }
-/* Large Devices (desktop) */
-@media screen and (min-width:992px){
+/* Large Devices (Desktop) */
+@media screen and (min-width: 992px){
     nav{
         justify-content: space-around;
     }
 }
-/* XXL Devices (desktop full hd) */
+/* XXL Devices (Desktop Full HD)*/
 @media screen and (min-width: 1400px){
     nav{
-        padding: 1rem calc(50vw - 660px); /* vw (viewport width)*/
+        flex-direction: row;
+        padding: 1rem calc(50vw - 660px); /*vw (viewport width) = ancho de la ventana*/
     }
 }

@@ -11,8 +11,8 @@
     display: block;
     margin: -1rem -1rem 1rem;
     padding: 1rem;
-    background-image: linear-gradient(
-        var(--mar4),
+    background: linear-gradient(
+        var(--mar2),
         var(--mar5)
     )
 }
@@ -21,17 +21,17 @@
     background-color: var(--light);
 }
 
-/*.card:first-child .card-header{ | Al primer titulo de las cards agregale el color tal
-    background-color: hsl(30, 50%, 50%);
+.card:first-child .card-header{ /*| Al primer titulo de las cards agregale el color tal */
+    background: var(--mar2);
 }
 
-.card:nth-child(3) .card-header{ |Al ultimo titulo de las cards agregarle el color tal
-    background-color: var(--danger);
+.card:nth-child(3) .card-header{ /*|Al ultimo titulo de las cards agregarle el color tal */
+    background: var(--mar3);
 }
 
-.card:last-child .card-header{  que sea el ultimo hijo
-    background-color: #333c;
-}*/
+.card:last-child .card-header{ /* que sea el ultimo hijo */
+    background: var(--mar1);
+}
 
 /* PSEUDOELEMNTOS: PARTE O ELEMENTO DENTRO DE OTRO */
 /* .card::first-letter{ | A LA PRIMERA LETRA

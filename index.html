@@ -17,8 +17,8 @@
     <!-- NAVEGACION PRINCIPAL -->
     <nav id="#nav">
         <a href="">CM</a>
-        <button class="btn"></button>
-        <ul class="menu">
+        <button id="menu-btn" class="btn btn-light icon-menu"></button>
+        <ul class="menu active">
             <li><a href="#home">Inicio</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#projects">Proyectos</a></li>
@@ -93,7 +93,11 @@
     <footer id="footer">
         <!-- mapa de contacto -->
         <div class="map">
-
+            <iframe class="cover"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.069936296052!2d-58.37593609999999!3d-34.602392999999985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacc473596c3%3A0x568d6d5f7f1f535d!2sEducaci%C3%B3nIT!5e0!3m2!1ses-419!2sar!4v1693966474831!5m2!1ses-419!2sar"
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
         </div>
         <!-- formulario de contacto -->
         <form action="" id="contact">
@@ -144,7 +148,7 @@
             maxlength="1500"
             placeholder="Ingrese su consulta"
             required></textarea>
-            <button class="btn">Enviar</button>
+            <button class="btn btn-info">Enviar</button>
         </form>
         <!-- redes sociales -->
         <div class="social">
