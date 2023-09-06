@@ -10,8 +10,8 @@
         /* Gradiente: tipo (direccion o forma [opcional], colores) */
         background-image: radial-gradient(
             circle at top right,
-            #a4abc3,
-            #f7ccde
+            var(--mar1),
+            var(--mar5)
         );
     }
     input,

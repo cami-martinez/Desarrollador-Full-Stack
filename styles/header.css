@@ -8,20 +8,20 @@
     align-content: center;
     /* tipografia */
     font-size: min(calc(2vw + 8rem), 3rem);
-    text-shadow: 0 0 .25rem #333;
+    text-shadow: 0 0 .25rem var(--dark);
     /* Esplicacion:
     min(a,b) funcion que permite al navegador determinar la medida mas pequeña
     calc(x + y) funcion que permite calcular con medidas incompatibles */
     /* atributos de fondo */
     color: #ffff;
-    background-color: #f7a3c0;
+    background-color: var(--mar2);
     background-image:
         url('../assets/bg/dev-mobile.png'),
         url('../assets/bg/dev-screen.png'),
         url('../assets/bg/dev-windows.png'),
         linear-gradient(
-            #f7a3c0,
-            #f4a6a3
+            var(--mar2),
+            var(--mar3)
         );
     background-position: 
         bottom right,

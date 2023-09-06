@@ -10,7 +10,7 @@
     width: 4rem;
     height: 4rem;
     border-radius: .5rem;
-    background-color: #eee;
+    background-color: var(--light);
     background-position: center;
     background-size: 3rem;
     background-repeat: no-repeat;
@@ -24,7 +24,7 @@
 .social a:hover{
     background-color: #ffffff;
     background-size: 3.5rem;
-    box-shadow: 0 .2rem .5rem #333;
+    box-shadow: 0 .2rem .5rem var(--dark);
 }
 /* Iconos de Redes sociales */
 .linkedin{

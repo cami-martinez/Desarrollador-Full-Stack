@@ -15,7 +15,7 @@
         <p>Developer Full Stack</p>
     </header>
     <!-- NAVEGACION PRINCIPAL -->
-    <nav>
+    <nav id="#nav">
         <a href="">CM</a>
         <button class="btn"></button>
         <ul class="menu">
@@ -30,7 +30,8 @@
         <!-- inicio -->
         <section id="home">
             <h2>Inicio</h2>
-            <ul class="list-unstyled">
+            <h3>Conocimientos</h3>
+            <ul class="list-unstyled flex wrap small">
                 <li class="card">
                     <strong class="card-header">HTML</strong>
                     Lenguaje de marcado de Hipertexto utilizado para estructurar las paginas web, utiliza etiquetas y atributos para definir la funcion que cumple cada elemento dentro de la pagina.
@@ -52,6 +53,29 @@
                     Sistema de control de versiones que permite realizar un seguimiento a cualquier proyecto que estemos realizando, facilitando el deshacer o repetir cambios en el mismo, como si de un historial se tratase.
                 </li>
             </ul>
+            <h3>Herramientas</h3>
+            <ul class="list-unstyled grid auto medium">
+                <li class="card">
+                    <strong class="card-header">Bootstrap</strong>
+                    Framework de CSS desarrollado por el equipo de twitter para facilitar la creacion de sitios web responsive, mediante la implementacion de clases creadas a partir de la metodologia BEM.
+                </li>
+                <li class="card">
+                    <strong class="card-header">SASS</strong>
+                    Preprocesador de CSS que utiliza Ruby como lenguaje de compilacion, que agiliza bastante la creacion de hojas de estilos robustas gracias a caracteristicas como variables, mixins, funciones y bucles.
+                </li>
+                <li class="card">
+                    <strong class="card-header">NodeJS</strong>
+                    Entorno en tiempo de Ejecucion basado en el motor V8 de Google, implementado principalmente para la ejecucion de JS del lado del servidor y desarrollo de aplicaciones de red altamente escalables.
+                </li>
+                <li class="card">
+                    <strong class="card-header">ReactJS</strong>
+                    Biblioteca de Javascript desarrollada por el equipo de facebook diseñada para crear interfaces de usuario con el objetivo de facilitar el desarrollo de aplicaciones de una sola pagina (SPA).
+                </li>
+                <li class="card">
+                    <strong class="card-header">MongoDB</strong>
+                    Sistema de Base de datos de tipo NoSQL orientado a documentos, donde en lugar de utilizar tablas para almacenar datos, los distribuye en colecciones de archivos, utilizando una sintaxis conocida como BSON.
+                </li>
+            </ul>
         </section>
         <!-- seccion de trabajos -->
         <section id="portfolio">
@@ -59,8 +83,11 @@
         </section>
         <!-- seccion de proyectos -->
         <section id="projects">
-
         </section>
+        <!-- ASIDE -->
+        <aside id="#aside">
+            <h2>Tabla de contenidos</h2>
+        </aside>
     </main>
     <!-- PIE DE PAGINA -->
     <footer id="footer">

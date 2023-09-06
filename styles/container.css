@@ -3,36 +3,46 @@
     padding: 1rem;
     box-shadow: 0 0 .5rem #999;
     overflow: hidden;
+    transition: all .5s ease;
 }
+
+
 .card-header{
     display: block;
     margin: -1rem -1rem 1rem;
     padding: 1rem;
     background-image: linear-gradient(
-        #f7a3c0,
-        #f4a6a3
-    );
+        var(--mar4),
+        var(--mar5)
+    )
 }
 /* PSEUDOCLASES: CARACTERISTICAS O INSTANCIAS DE UN ELEMENTO */
 .card:hover{
-    background-color: #eee;
+    background-color: var(--light);
 }
-/* .card:first-child .card-header{ | Al primer titulo de las cards agregale el color tal
-    background-color: #a4abc3;
+
+/*.card:first-child .card-header{ | Al primer titulo de las cards agregale el color tal
+    background-color: hsl(30, 50%, 50%);
 }
-.card:last-child .card-header{ |Al ultimo titulo de las cards agregarle el color tal
-    background-color: #333;
-} */
+
+.card:nth-child(3) .card-header{ |Al ultimo titulo de las cards agregarle el color tal
+    background-color: var(--danger);
+}
+
+.card:last-child .card-header{  que sea el ultimo hijo
+    background-color: #333c;
+}*/
+
 /* PSEUDOELEMNTOS: PARTE O ELEMENTO DENTRO DE OTRO */
 /* .card::first-letter{ | A LA PRIMERA LETRA
     font-size: 2rem;
     letter-spacing: .1rem; |separacion entre las letras
 } */
 .card::first-line{ /*PRIMERA LINEA*/
-    color: #eee;
+    color: var(--light);
     text-shadow: 
-    0 0 .25rem #a4abc3,
-    -.2rem .2rem .2rem #333;
+    0 0 .25rem var(--mar1),
+    -.2rem .2rem .2rem var(--dark);
     font-size: 1.5rem;
 }
 
