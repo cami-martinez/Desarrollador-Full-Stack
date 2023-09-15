@@ -8,11 +8,10 @@
     border: none;
     color: var(--color);
     background-color: var(--bg);
+    transition: all 1s ease;
 }
 
 .btn:hover{
-    left: .5rem;
-    top: .5rem;
     background-image: linear-gradient(
         #eeec,
         transparent
@@ -25,7 +24,15 @@
     --bg: var(--danger);
 }
 .btn-info{
-    --bg: var(--mar4);
+    --bg: var(--info);
+}
+.btn-light{
+    --color: var(--dark);
+    --bg: var(--light);
+}
+.btn-warning{
+    --color: var(--dark);
+    --bg: var(--warning);
 }
 /* Caja de fondo */
 .cover{
