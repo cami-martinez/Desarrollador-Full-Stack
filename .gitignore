@@ -1,0 +1,7 @@
+# Archivos
+*.swp
+*.temp
+*.tmp
+*.log*
+*.txt
+*.env
