@@ -1,4 +1,7 @@
-# Desarrollador-Full-Stack
+# Desarrolladora Web Full Stack
  Clases dadas por Educacion IT, todo lo que se vea aqui es lo que fuimos viendo en las clases en vivo de __Desarrollo web Full Stack__ 
-Modulo 1:
-Modulo 2: Maquetador web avanzado
+* __Modulo 1:__ HTML
+* __Modulo 2:__ Maquetador web avanzado 
+* __Modulo 3:__...
+* __Modulo 4:__...
+* __Modulo 5:__...
