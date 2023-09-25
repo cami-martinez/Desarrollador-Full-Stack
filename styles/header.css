@@ -38,10 +38,19 @@
     background-attachment: fixed;
     /* transicion */
     transition: background 5s linear .2s;
+    /* prespectiva */
+    perspective: 3rem;
+    perspective-origin: top center;
 }
 #header:hover{
     background-position: 
     top right,
     top left,
     center;
+}
+h1{
+    font-family: "Disney";
+    animation: appear 2s ease-out;
+    animation-fill-mode: backwards;
+    transform: rotateX(5deg);
 }

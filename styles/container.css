@@ -46,7 +46,13 @@
     font-size: 1.5rem;
 }
 
-/* .card:hover::first-line{
-    A LA PRIMERA LINEA CUANDO PASO EL MOUSE SOBRE LA CARD
-    background-color: blue;
-} */
+.flex,
+.grid{
+    perspective: 30rem;
+    perspective-origin: top center;
+}
+.card:hover{
+    transform: 
+    rotateX(5deg)
+    scale(1.2);
+}
