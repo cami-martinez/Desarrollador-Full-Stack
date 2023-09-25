@@ -3,3 +3,9 @@
         background-position: 0;
     }
 }
+
+@keyframes loading {
+    to{
+        transform: rotate(360deg);  /* sentido horario */
+    }
+}

@@ -61,3 +61,10 @@ iframe{
 :is(nav,.social,.example) a{
     text-decoration: none;
 }
+/* clases de ayuda */
+.d-flex{
+    display: flex;
+}
+.d-grid{
+    display: grid;
+}
