@@ -1,0 +1,78 @@
+.bg-body{
+    height: 100vh;
+    background-image: linear-gradient(
+    to bottom right,
+    hsl(300, 50%, 80%, .9),
+    hsl(270, 50%, 80%, .9),
+    hsl(300, 50%, 80%, .9)
+    );
+}
+#root{
+    width: min(100%, 720px);
+    padding: 1rem;
+}
+#root header{
+    text-align: center;
+    font-size: 1.25rem;
+}
+#root h1{
+    animation: none;
+}
+#root img{
+    margin: 1rem auto;
+    width: 100%;
+    max-width: 160px;
+}
+#root form{
+    gap: 1rem;
+    align-items: start;
+}
+#root form >*{
+    flex: 1 0 min(100%, 240px);
+}
+#root label{
+    display: none;
+}
+#root input{
+    width: 100%;
+    margin: .25rem 0 .5rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--dark);
+    background-color: transparent;
+}
+#root input:hover::-moz-placeholder{
+    -moz-appearance: none;
+    color: aliceblue;
+}
+#root input:hover::-webkit-input-placeholder{
+    -webkit-appearance: none;
+    color: black;
+}
+#root button{
+    display: block;
+    margin-top: .25rem;
+    margin-left: auto;
+}
+#root p{
+    margin: .25rem;
+}
+
+/* #root form{
+    gap: .25rem;
+    padding: 1rem;
+    grid-template-areas:
+    "img h2"
+    "img user"
+    "img pass"
+    "img button"
+    "forgot forgot"
+    "sing sing";
+}
+
+#root form img{
+    grid-area: img;
+}
+#root form h2{
+    grid-area: h2;
+} */
