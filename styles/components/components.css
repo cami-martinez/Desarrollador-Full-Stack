@@ -34,6 +34,10 @@
     --color: var(--dark);
     --bg: var(--warning);
 }
+.btn-mar1{
+    --color: var(--dark);
+    --bg: var(--mar1);
+}
 /* Caja de fondo */
 .cover{
     position: absolute;
