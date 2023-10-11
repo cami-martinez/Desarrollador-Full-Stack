@@ -1,0 +1,36 @@
+// Variables: espacios reservados en memoria cuyo valor puede cambiar
+$color: #224 ;
+$bg-color: #e8c8 ;
+$bg-alt: #88e8 ;
+
+// Mixin: son estilos quese utilizan como atributos y que poseen parametros para su implementacion
+@mixin position($p: relative, $z: 0){
+    position: $p;
+    z-index: $z;
+}
+
+// Nesting: Anidacion de selectores para la creacion de estilos especificos
+
+.display-box{
+    @include position;
+    color: $color;
+    background: $bg-color radial-gradient(
+        circle at top right,
+        $bg-color,
+        $bg-alt,
+        $bg-color
+    );
+    .list{
+        @include position(absolute, 1);
+        list-style: none;
+        padding: .5rem;
+        &-block{
+            top: 100%;
+            left: 0;
+        }
+        &-side{
+            top: 0;
+            left: 100%;
+        }
+    } 
+}
