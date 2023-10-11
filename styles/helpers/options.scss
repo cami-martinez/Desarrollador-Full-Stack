@@ -46,8 +46,8 @@ $bg-alt: #88e8 ;
     );
     .list{
         @include position(absolute, 1);
-        @include normalize(.5rem, .25rem, 1px solid var(--dark), $ma: border-radius);
-        list-style: none;
+        @include normalize(none, .25rem, 1px solid var(--dark), $ma: border-radius, $pa: list-style);
+        display: none;
         &-block{
             top: 100%;
             left: 0;
@@ -58,4 +58,19 @@ $bg-alt: #88e8 ;
             left: 100%;
         }
     } 
+    :is(ol, ul){
+        @extend .zeroise;
+        background-color: $bg-alt;
+    }
+    li{
+        @include position;
+        padding: .5rem;
+        &:hover{
+            background-color: $bg-color;
+        }
+    }
+    &:hover > .list,
+    li:hover > .list{
+        display: block;
+    }
 }
